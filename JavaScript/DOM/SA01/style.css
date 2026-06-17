@@ -1,0 +1,70 @@
+* {
+    margin-top: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100px;
+    display: flex;
+    margin: 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(190, 78, 168);
+  
+
+}
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #eee;
+    outline: none;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #690954, #60054f);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#validar {
+    background: linear-gradient(90deg, #690954, #60054f);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.bloquinho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    width: 30%;
+    border-radius: 8px;
+
+}
+.adicionar-telefone {
+    background: linear-gradient(90deg, #690954, #60054f);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.telefone {
+    display: flex;
+    gap: 10px;
+}
