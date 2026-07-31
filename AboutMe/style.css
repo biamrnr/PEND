@@ -1,0 +1,595 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:
+    linear-gradient(135deg,#0f172a,#111827,#020617);
+
+    color:#fff;
+
+    min-height:100vh;
+
+    padding:50px 20px;
+
+}
+
+.container{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+
+.perfil{
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:30px;
+
+    padding:50px;
+
+    text-align:center;
+
+    box-shadow:
+    0 25px 60px rgba(0,0,0,.45);
+
+    margin-bottom:40px;
+
+    transition:.4s;
+
+}
+
+.perfil:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.foto-perfil{
+
+    width:180px;
+
+    height:180px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:5px solid #f367ee;
+
+    box-shadow:
+    0 0 20px rgba(255, 29, 131, 0.8),
+    0 0 50px rgba(255, 29, 131, 0.3);
+
+    margin-bottom:25px;
+
+    transition:.4s;
+
+}
+
+.foto-perfil:hover{
+
+    transform:scale(1.05);
+
+}
+
+.perfil h1{
+
+    font-size:52px;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+
+}
+
+.perfil h3{
+
+    color:#c4b5fd;
+
+    font-weight:500;
+
+    margin-bottom:25px;
+
+}
+
+.perfil p{
+
+    color:#e5e7eb;
+
+    font-size:17px;
+
+    line-height:1.9;
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+
+}
+
+.card{
+
+    background:rgba(255,255,255,.07);
+
+    backdrop-filter:blur(16px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:25px;
+
+    padding:35px;
+
+    transition:.35s;
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.25);
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#f367ee;
+
+    box-shadow:
+    0 20px 60px rgba(255, 29, 131, 0.25);
+
+}
+
+.card h2{
+
+    font-size:28px;
+
+    margin-bottom:18px;
+
+    color:#fff;
+
+    position:relative;
+
+}
+
+.card h2::after{
+
+    content:"";
+
+    display:block;
+
+    width:70px;
+
+    height:4px;
+
+    background:#f367ee;
+
+    border-radius:20px;
+
+    margin-top:10px;
+
+}
+
+.card p{
+
+    color:#d1d5db;
+
+    line-height:1.9;
+
+    font-size:16px;
+
+}
+
+.foto-interesse{
+
+    width:170px;
+
+    height:170px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    display:block;
+
+    margin:30px auto 0;
+
+    border:4px solid #f367ee;
+
+    box-shadow:
+    0 0 20px rgba(255, 29, 131, 0.6);
+
+    transition:.4s;
+
+}
+
+.foto-interesse:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+.contato{
+    text-align:center;
+}
+
+.contato p{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+
+.btn{
+
+    text-decoration:none;
+
+    color:#fff;
+
+    background:linear-gradient(135deg,#f367ee,#ea33c2);
+
+    padding:15px 32px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+    box-shadow:0 10px 25px rgba(255, 29, 131, 0.35);
+
+}
+
+.btn:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 18px 35px rgba(255, 29, 131, 0.768);
+
+}
+
+.btn:active{
+
+    transform:scale(.95);
+
+}
+
+
+.card{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    animation:aparecer .8s forwards;
+
+}
+
+.card:nth-child(1){
+    animation-delay:.2s;
+}
+
+.card:nth-child(2){
+    animation-delay:.4s;
+}
+
+.card:nth-child(3){
+    animation-delay:.6s;
+}
+
+.card:nth-child(4){
+    animation-delay:.8s;
+}
+
+@keyframes aparecer{
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+.foto-perfil{
+
+    animation:flutuar 4s ease-in-out infinite;
+
+}
+
+@keyframes flutuar{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-8px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#111827;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#f367ee;
+
+    border-radius:30px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#f367ee;
+
+}
+
+
+::selection{
+
+    background:#f367ee;
+
+    color:white;
+
+}
+
+
+@media(max-width:900px){
+
+.perfil{
+
+    padding:35px;
+
+}
+
+.perfil h1{
+
+    font-size:40px;
+
+}
+
+.cards{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:600px){
+
+body{
+
+    padding:20px 15px;
+
+}
+
+.perfil{
+
+    padding:25px;
+
+}
+
+.perfil h1{
+
+    font-size:32px;
+
+}
+
+.perfil h3{
+
+    font-size:18px;
+
+}
+
+.perfil p{
+
+    font-size:15px;
+
+}
+
+.card{
+
+    padding:25px;
+
+}
+
+.card h2{
+
+    font-size:24px;
+
+}
+
+.foto-perfil{
+
+    width:140px;
+
+    height:140px;
+
+}
+
+.foto-interesse{
+
+    width:140px;
+
+    height:140px;
+
+}
+
+.btn{
+
+    width:100%;
+
+    text-align:center;
+
+}
+
+}
+
+
+footer{
+
+    margin-top:50px;
+
+    text-align:center;
+
+    color:#bdbdbd;
+
+    font-size:14px;
+
+    opacity:.8;
+
+}
+
+.contato{
+    grid-column: 1 / -1;
+    max-width: 700px;
+    margin: 20px auto 0;
+    text-align: center;
+}
+
+/* ===========================
+   FORMULÁRIO DE CONTATO
+=========================== */
+
+#formContato{
+
+    width:100%;
+
+    max-width:550px;
+
+    margin:30px auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+#formContato input,
+#formContato textarea{
+
+    width:100%;
+
+    padding:15px 18px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    color:#fff;
+
+    font-size:16px;
+
+    font-family:'Poppins',sans-serif;
+
+    transition:.3s;
+
+}
+
+#formContato input::placeholder,
+#formContato textarea::placeholder{
+
+    color:#cbd5e1;
+
+}
+
+#formContato input:focus,
+#formContato textarea:focus{
+
+    outline:none;
+
+    border-color:#8b5cf6;
+
+    box-shadow:0 0 15px rgba(139,92,246,.4);
+
+}
+
+#formContato textarea{
+
+    height:150px;
+
+    resize:none;
+
+}
+
+#formContato button{
+
+    width:220px;
+
+    margin:10px auto 0;
+
+    cursor:pointer;
+
+}
+
+#mensagemErro{
+
+    text-align:center;
+
+    font-weight:600;
+
+    margin-top:10px;
+
+    color:#ef4444;
+
+}
+
+.sucesso{
+
+    color:#22c55e !important;
+
+}
