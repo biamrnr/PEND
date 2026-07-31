@@ -1,0 +1,69 @@
+PEND - Programação Front-End
+
+Situação de Aprendizagem 02
+
+1. Melhorias realizadas
+
+* Criação de um portal de notícias chamado NewsToday.
+* Adição de uma seção de introdução com imagem e texto de apresentação.
+* Organização das notícias em três categorias: Tecnologia, Esportes e Economia.
+* Implementação de um menu de navegação com links internos.
+* Aplicação de layout responsivo utilizando CSS Grid.
+* Utilização da fonte Inter para modernizar a aparência do site.
+* Adição de efeitos de interação (hover) nos cards de notícias.
+* Melhor alinhamento e distribuição dos conteúdos na página.
+* Inserção de imagens ilustrativas para cada notícia.
+
+2. Elementos semânticos utilizados
+
+Foram utilizados os seguintes elementos semânticos do HTML5:
+
+* `<header>`: cabeçalho principal da página.
+* `<nav>`: menu de navegação.
+* `<main>`: conteúdo principal do site.
+* `<section>`: separação das categorias e da introdução.
+* `<article>`: estrutura individual de cada notícia.
+* `<footer>`: rodapé da página.
+
+3. Media Queries implementadas
+
+### Tablet (até 900px)
+
+* Cabeçalho organizado em coluna.
+* Menu adaptado para telas menores.
+* Introdução alterada para apenas uma coluna.
+* Grid de notícias alterado para duas colunas.
+* Ajuste do tamanho dos títulos das categorias.
+
+### Celular (até 600px)
+
+* Redução do tamanho do cabeçalho.
+* Ajuste do tamanho dos links do menu.
+* Redução dos espaçamentos da página.
+* Redução do tamanho dos títulos da introdução.
+* Ajuste da altura das imagens.
+* Grid de notícias alterado para uma única coluna.
+* Ajustes no rodapé para melhor visualização.
+
+4. Decisões de UX e UI adotadas
+
+### UX (Experiência do Usuário)
+
+* Navegação simples através do menu superior.
+* Organização das notícias por categorias.
+* Layout responsivo para diferentes dispositivos.
+* Estrutura clara para facilitar a leitura das notícias.
+* Introdução explicativa para apresentar o portal ao usuário.
+
+### UI (Interface do Usuário)
+
+* Design minimalista utilizando cores neutras.
+* Uso da fonte Inter para um visual moderno.
+* Espaçamento adequado entre os elementos.
+* Cards organizados para destacar as notícias.
+* Efeitos visuais suaves ao passar o mouse.
+* Hierarquia visual bem definida entre títulos, imagens e textos.
+
+Conclusão
+
+O projeto foi desenvolvido utilizando HTML5 e CSS3, aplicando conceitos de responsividade, semântica e design moderno. As melhorias implementadas proporcionam uma navegação intuitiva, organizada e adaptada para diferentes tamanhos de tela.
