@@ -1,0 +1,90 @@
+
+body {
+    font-family: Arial;
+    text-align: center;
+    background-color: #ffd6eb;
+}
+
+h1 {
+    color: #e83e9f;
+}
+
+#area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+#ingredientes,
+#bebidas {
+    width: 180px;
+}
+
+.ingrediente,
+.bebida {
+    background-color: #fff0f7;
+    padding: 12px;
+    margin: 10px;
+    border-radius: 8px;
+    cursor: grab;
+    border: 1px solid #f3a8cd;
+}
+
+.ingrediente:hover,
+.bebida:hover {
+    background-color: #f7a8cc;
+}
+
+#prato {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background-color: #fff5fa;
+    border: 10px solid #ed72ad;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 8px;
+}
+
+#textoPrato {
+    font-size: 50px;
+}
+
+#prato .ingrediente {
+    margin: 0;
+    padding: 8px;
+    font-size: 14px;
+}
+
+#copo {
+    width: 100px;
+    height: 140px;
+    margin: auto;
+
+    background-color: #ffe5f1;
+    border: 4px solid #ed72ad;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 35px;
+}
+
+#copo .bebida {
+    margin: 0;
+    padding: 8px;
+    font-size: 13px;
+}
+
+#mensagem {
+    margin-top: 30px;
+    font-weight: bold;
+    color: #d63384;
+}
