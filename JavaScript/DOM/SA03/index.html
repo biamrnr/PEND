@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NewsToday</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header class="topo">
+
+        <h1>NewsToday</h1>
+
+        <nav class="menu">
+
+            <a href="#noticias">
+                Notícias
+            </a>
+
+            <a href="#contato">
+                Contato
+            </a>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="intro">
+
+            <div class="intro-texto">
+
+                <span>
+                    PORTAL DE NOTÍCIAS
+                </span>
+
+                <h2>
+                    Informação rápida,
+                    moderna e confiável.
+                </h2>
+
+                <p>
+                    Acompanhe notícias atualizadas
+                    diretamente através de uma
+                    API externa.
+                </p>
+
+            </div>
+
+            <img
+                src="https://images.unsplash.com/photo-1504711434969-e33886168f5c"
+                alt="Jornal e notícias"
+            >
+
+        </section>
+
+        <section id="noticias">
+
+            <h2 class="categoria">
+                Notícias
+            </h2>
+
+            <div class="busca">
+
+                <input
+                    type="text"
+                    id="campoBusca"
+                    placeholder="Digite um assunto"
+                >
+
+                <button id="botaoBuscar">
+                    Buscar
+                </button>
+
+            </div>
+
+            <div
+                id="noticias-api"
+                class="grid-noticias">
+
+                <p class="mensagem">
+                    Carregando notícias...
+                </p>
+
+            </div>
+
+        </section>
+
+        <section id="contato" class="contato">
+
+            <h2 class="categoria">
+                Contato
+            </h2>
+
+            <p>
+                Entre em contato com a equipe
+                do NewsToday.
+            </p>
+
+            <p>
+                Email: newstoday@email.com
+            </p>
+
+            <p>
+                Telefone: (35) 99999-9999
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+
+        <p>
+            NewsToday
+        </p>
+
+        <p>
+            Portal de notícias
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
